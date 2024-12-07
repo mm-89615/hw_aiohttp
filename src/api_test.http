@@ -1,0 +1,48 @@
+GET http://localhost:8080/ad/1
+
+###
+POST http://localhost:8080/ad
+Content-Type: application/json
+
+{
+    "title": "title",
+    "description": "description",
+    "owner": "owner"
+}
+
+###
+POST http://localhost:8080/ad
+Content-Type: application/json
+
+{
+    "title": "title 2",
+    "description": "description 2",
+    "owner": "owner 2"
+}
+###
+POST http://localhost:8080/ad
+Content-Type: application/json
+
+{
+  "title": "title 2",
+  "description": "description 2"
+}
+###
+GET http://localhost:8080/ad
+
+###
+PATCH http://localhost:8080/ad/1
+Content-Type: application/json
+
+{
+    "title": "new title"
+}
+
+###
+GET http://localhost:8080/ad/1
+
+###
+DELETE http://localhost:8080/ad/1
+
+###
+GET http://localhost:8080/ad/1
